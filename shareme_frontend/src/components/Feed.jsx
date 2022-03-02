@@ -37,10 +37,9 @@ const Feed = () => {
   if(loading) return <Spinner message="Estamos adicionando novas ideias ao seu feed!"/>
 
   return (
-    <>
-     <h1>Eu sou a Feed</h1>
-     <p>Wartinho</p>
-    </>
+    <div>
+      {pins && <MasonryLayout pins={pins} />}
+    </div>
   )
 }
 
