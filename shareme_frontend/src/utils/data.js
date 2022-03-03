@@ -134,7 +134,7 @@ export const categories = [
       'https://i.pinimg.com/236x/72/8c/b4/728cb43f48ca762a75da645c121e5c57.jpg',
   },
   {
-    name: 'culinária',
+    name: 'comida',
     image:
       'https://i.pinimg.com/236x/7d/ef/15/7def15ac734837346dac01fad598fc87.jpg',
   },
@@ -154,7 +154,7 @@ export const categories = [
       'https://i.pinimg.com/236x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg',
   },
   {
-    name: 'citações',
+    name: 'frases',
     image:
       'https://i.pinimg.com/236x/46/7c/17/467c17277badb00b638f8ec4da89a358.jpg',
   },
