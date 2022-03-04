@@ -43,11 +43,16 @@ module.exports = {
         primary: '#FAFAFA',
         secColor: '#efefef',
         navColor: '#BEBEBE',
+        accent: '#81BE00',
       },
       backgroundColor: {
         mainColor: '#FBF8F9',
         secondaryColor: '#F0F0F0',
+        accentColor: '#81BE00',
         blackOverlay: 'rgba(0, 0 ,0 ,0.7)',
+      },
+      borderColor: {
+        accent: '#81BE00',
       },
       keyframes: {
         'slide-in': {

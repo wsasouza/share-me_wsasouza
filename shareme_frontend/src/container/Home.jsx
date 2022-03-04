@@ -6,7 +6,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Pins from './Pins';
 import { Sidebar, UserProfile } from '../components';
 import { client } from '../client';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logoblack.png';
 import { userQuery } from '../utils/data';
 import { fetchUser } from '../utils/fetchUser';
 
@@ -31,7 +31,7 @@ const Home = () => {
   }, [])
 
   return (
-   <div className="flex bg-gray-50 md:flex-row flex-col h-screen transaction-height duration-75 ease-out">
+   <div className="flex bg-gray-200 md:flex-row flex-col h-screen transaction-height duration-75 ease-out">
      
      <div className="hidden md:flex h-screen flex-initial">
         <Sidebar user={user && user}/>
@@ -41,7 +41,7 @@ const Home = () => {
         <div className="p-2 w-full flex flex-row justify-between items-center shadow-md">
           <HiMenu fontSize={40} className="cursor-pointer" onClick={() => setToggleSidebar(true)} />
           <Link to="/">
-            <img src={logo} alt="logo" className="w-28"/>
+            <img src={logo} alt="logo" className="w-36"/>
           </Link>
           <Link to={`user-profile/${user?._id}`}>
             <img src={user?.image} alt="avatar" className="w-28"/>

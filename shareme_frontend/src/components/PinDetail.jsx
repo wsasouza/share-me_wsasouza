@@ -126,7 +126,7 @@ const PinDetail = ({ user }) => {
               />
               <button
                 type="button"
-                className="bg-red-500 text-white rounded-full px-6 py-2 font-semibold text-base outline-none"
+                className="bg-accentColor text-white rounded-full px-6 py-2 font-semibold text-base outline-none hover:opacity-75"
                 onClick={addComment}
               >
                 {addingComment ? 'Enviando...' : 'Enviar'}

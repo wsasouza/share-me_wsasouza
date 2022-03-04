@@ -9,13 +9,13 @@ import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
 import { fetchUser } from '../utils/fetchUser';
 
-const activeBtnStyles = 'bg-red-500 text-white font-bold p-2 rounded-full w-20 outline-none';
-const notActiveBtnStyles = 'bg-primary mr-4 text-black font-bold p-2 rounded-full w-20 outline-none';
+const activeBtnStyles = 'bg-accentColor mr-4 text-white font-bold p-2 rounded-full w-20 outline-none';
+const notActiveBtnStyles = 'bg-white mr-4 text-black font-bold p-2 rounded-full w-20 outline-none';
 
 const UserProfile = () => {
   const [user, setUser] = useState(null);
   const [pins, setPins] = useState(null);
-  const [text, setText] = useState('Criado');
+  const [text, setText] = useState('Enviada');
   const [activeBtn, setActiveBtn] = useState('created');
   const navigate = useNavigate();
   const { userId } = useParams();
@@ -31,7 +31,7 @@ const UserProfile = () => {
   }, [userId]);
 
   useEffect(() => {
-    if (text === 'Criado') {
+    if (text === 'Enviada') {
       const createdPinsQuery = userCreatedPinsQuery(userId);
 
       client.fetch(createdPinsQuery).then((data) => {
@@ -65,7 +65,7 @@ const UserProfile = () => {
               className="w-full h-370 2xl:h-510 shadow-lg object-cover"
             />
             <img
-              className="rounded-full w-20 h-20 -mt-10 shadow-xl object-cover"
+              className="rounded-full w-36 h-36 -mt-10 shadow-xl object-cover"
               src={user.image}
               alt="user-pic"
             />
@@ -80,11 +80,11 @@ const UserProfile = () => {
                 render={(renderProps) => (
                   <button
                     type="button"
-                    className=" bg-white p-2 rounded-full cursor-pointer outline-none shadow-md"
+                    className="bg-white p-2 rounded-full cursor-pointer outline-none shadow-md hover:bg-black" 
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
                   >
-                    <AiOutlineLogout color="red" fontSize={21} />
+                    <AiOutlineLogout color="red" fontSize={28} />
                   </button>
                 )}
                 onLogoutSuccess={logout}
@@ -102,7 +102,7 @@ const UserProfile = () => {
             }}
             className={`${activeBtn === 'created' ? activeBtnStyles : notActiveBtnStyles}`}
           >
-            Criado
+            Enviada
           </button>
           <button
             type="button"
@@ -112,7 +112,7 @@ const UserProfile = () => {
             }}
             className={`${activeBtn === 'saved' ? activeBtnStyles : notActiveBtnStyles}`}
           >
-            Salvo
+            Salva
           </button>
         </div>
         
@@ -122,7 +122,7 @@ const UserProfile = () => {
           </div>
         ) : (
           <div className="flex justify-center font-bold items-center w-full text-1xl mt-2">
-            Nenhuma imagem encontrada!
+            Nenhuma imagem salva
           </div>
         )}
       </div>

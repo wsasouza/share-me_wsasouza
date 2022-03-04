@@ -193,7 +193,7 @@ const CreatePin = ({ user }) => {
               <button
                 type="button"
                 onClick={savePin}
-                className="bg-red-500 text-white font-bold p-2 rounded-full w-28 outline-none opacity-80 hover:opacity-100 transition-all duration-500 ease-in-out"
+                className="bg-accentColor text-white font-bold p-2 rounded-full w-28 outline-none opacity-100 hover:opacity-75 transition-all duration-500 ease-in-out"
               >
                 Salvar
               </button>
