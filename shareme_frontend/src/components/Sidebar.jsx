@@ -34,7 +34,7 @@ const Sidebar= ({ user, closeToggle }) => {
             Página inicial
           </NavLink>
           <h3 className="mt-2 px-5 text-base 2xl:text-xl">Categorias</h3>
-          {categories.slice(0, categories.length -1).map(category => (
+          {categories.slice(0, categories.length).map(category => (
             <NavLink
               to={`/category/${category.name}`}
               className={({ isActive }) => isActive ? isActiveStyle : isNotActiveStyle}
@@ -44,7 +44,7 @@ const Sidebar= ({ user, closeToggle }) => {
               <img 
                 src={category.image} 
                 alt="category" 
-                className="w-8 h-8 rounded-full shadow-sm"
+                className="w-12 h-12 rounded-full shadow-sm"
               />
               {category.name}
             </NavLink>

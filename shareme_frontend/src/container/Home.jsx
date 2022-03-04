@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { HiMenu } from 'react-icons/hi';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import { Link, Route, Routes, Navigate } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 
 import Pins from './Pins';
 import { Sidebar, UserProfile } from '../components';
@@ -62,7 +62,7 @@ const Home = () => {
         <Route path="/user-profile/:userId" element={<UserProfile/>} />
         <Route 
           path="/*" 
-          element={userInfo ? <Pins user={user && user}/> : <Navigate to="/login"/> } />
+          element={<Pins user={user && user}/>} />
       </Routes>
     </div>
 

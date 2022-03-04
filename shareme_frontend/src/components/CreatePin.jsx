@@ -168,7 +168,7 @@ const CreatePin = ({ user }) => {
             type="url"
             value={destination}
             onChange={(e) => setDestination(e.target.value)}
-            placeholder="Adicionar o link de destino"
+            placeholder="Adicionar o link de origem da imagem"
             className="outline-none text-base sm:text-lg border-b-2 border-gray-200 p-2"
           />
 

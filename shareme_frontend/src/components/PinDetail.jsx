@@ -138,7 +138,7 @@ const PinDetail = ({ user }) => {
 
       {pins?.length > 0 && (
         <h2 className="text-center font-bold text-2xl mt-8 mb-4">
-          Mais imagens como essa
+          Mais imagens nessa categoria:
         </h2>
       )}
 

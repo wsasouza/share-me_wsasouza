@@ -51,7 +51,7 @@ const Login = () => {
             render={(renderProps) => (
               <button
                 type="button"
-                className="bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none"
+                className="bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none opacity-75 hover:opacity-100"
                 onClick={renderProps.onClick}
                 disabled={renderProps.disabled}
               >
