@@ -5,6 +5,7 @@ import { client } from '../client';
 import { feedQuery, searchQuery } from '../utils/data';
 import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
+import EmptyList from './EmptyList';
 
 
 const Feed = () => {
@@ -36,7 +37,7 @@ const Feed = () => {
 
   if(loading) return <Spinner message="Estamos adicionando novas ideias ao seu feed!"/>
 
-  if(!pins?.length) return <h2>Não há imagens disponíveis</h2>
+  if(!pins?.length) return <EmptyList message="Nenhuma imagem encontrada!"/>
 
   return (
     <div>
