@@ -37,7 +37,7 @@ const Feed = () => {
 
   if(loading) return <Spinner message="Estamos adicionando novas ideias ao seu feed!"/>
 
-  if(!pins?.length) return <EmptyList message="Nenhuma imagem encontrada!"/>
+  if(!pins?.length) return <EmptyList image="empty" message="Nenhuma imagem nesta categoria."/>
 
   return (
     <div>

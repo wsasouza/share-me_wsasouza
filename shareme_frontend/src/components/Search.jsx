@@ -32,7 +32,7 @@ const Search = ({ searchTerm }) => {
       {loading && <Spinner message="Procurando imagens..." />}
       {pins?.length !== 0 && <MasonryLayout pins={pins} />}
       {pins?.length === 0 && searchTerm !== '' && !loading && (
-        <EmptyList message="Nenhuma imagem encontrada!" />
+        <EmptyList image="notFound" message="Nenhuma imagem encontrada." />
       )}
     </div>
   );

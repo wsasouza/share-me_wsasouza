@@ -8,6 +8,7 @@ import { client } from '../client';
 import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
 import { fetchUser } from '../utils/fetchUser';
+import EmptyList from './EmptyList';
 
 const activeBtnStyles = 'bg-accentColor mr-4 text-white font-bold p-2 rounded-full w-20 outline-none';
 const notActiveBtnStyles = 'bg-white mr-4 text-black font-bold p-2 rounded-full w-20 outline-none';
@@ -121,9 +122,7 @@ const UserProfile = () => {
             <MasonryLayout pins={pins} />
           </div>
         ) : (
-          <div className="flex justify-center font-bold items-center w-full text-1xl mt-2">
-            Nenhuma imagem salva
-          </div>
+          <EmptyList image="notSave" message="Nenhuma imagem salva."/>
         )}
       </div>
     </div>
