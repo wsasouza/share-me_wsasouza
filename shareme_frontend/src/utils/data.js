@@ -143,11 +143,6 @@ export const categories = [
       'https://i.pinimg.com/236x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg',
   },
   {
-    name: 'websites',
-    image:
-      'https://i.pinimg.com/750x/66/b1/29/66b1296d36598122e6a4c5452b5a7149.jpg',
-  },
-  {
     name: 'outros',
     image:
       'https://i.pinimg.com/236x/2e/63/c8/2e63c82dfd49aca8dccf9de3f57e8588.jpg',
