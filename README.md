@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./Readme/go-images.gif" alt="Share Me" />
+  <img src="./go-images.gif" alt="Go-Images" />
 
 &#xa0;
 
