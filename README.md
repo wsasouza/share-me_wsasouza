@@ -7,7 +7,7 @@
 
 </div>
 
-<h1 align="center">Demo</h1>
+<h1 align="center">Go Images</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/wsasouza/share-me_wsasouza?color=81BE00">
