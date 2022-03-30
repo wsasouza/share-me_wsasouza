@@ -3,7 +3,7 @@
 
 &#xa0;
 
-<a href="https://go-images.netlify.app/">GoImages</a>
+<a href="https://go-images.netlify.app/">GoImages Online</a>
 
 </div>
 
